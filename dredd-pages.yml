@@ -3,7 +3,7 @@ hookfiles: null
 language: nodejs
 require: null
 server: npm start
-server-wait: 5
+server-wait: 3
 init: false
 custom: {}
 names: false
