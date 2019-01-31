@@ -4,6 +4,7 @@
 const bodyParser = require('body-parser');
 const debug = require('debug')('express-smoke-testing');
 const express = require('express');
+const faker = require('faker');
 const logger = require('morgan');
 const path = require('path');
 
@@ -15,20 +16,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 const data = {
-  companies: [
-    {
-      id: 0,
-      name: 'Google',
-    },
-    {
-      id: 1,
-      name: 'Apple',
-    },
-    {
-      id: 2,
-      name: 'Microsoft',
-    },
-  ],
+  companies: (new Array(3)).fill(undefined).map((val, idx) => ({
+    id: idx,
+    name: faker.company.companyName(),
+  })),
 };
 
 const router = express.Router();
