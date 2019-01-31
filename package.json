@@ -4,7 +4,7 @@
   "description": "Integrating smoke tests into your Express app Travis pipeline",
   "scripts": {
     "start": "node serve.js",
-    "test": "mocha && dredd --config dredd-api.yml && wait-on tcp:3000 -r && dredd --config dredd-pages.yml"
+    "test": "mocha && ./scripts/good-smoke.sh"
   },
   "repository": {
     "type": "git",
