@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 const data = {
-  companies: (new Array(3)).fill(undefined).map((val, idx) => ({
+  companies: (new Array(50)).fill(undefined).map((val, idx) => ({
     id: idx,
     name: faker.company.companyName(),
   })),
