@@ -17,12 +17,15 @@ app.use(bodyParser.json());
 const data = {
   companies: [
     {
+      id: 0,
       name: 'Google',
     },
     {
+      id: 1,
       name: 'Apple',
     },
     {
+      id: 2,
       name: 'Microsoft',
     },
   ],
