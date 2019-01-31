@@ -2,9 +2,8 @@
   "name": "express-smoke-testing",
   "version": "0.1.0",
   "description": "Integrating smoke tests into your Express app Travis pipeline",
-  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +14,11 @@
   "bugs": {
     "url": "https://github.com/djragsdale/express-smoke-testing/issues"
   },
-  "homepage": "https://github.com/djragsdale/express-smoke-testing#readme"
+  "homepage": "https://github.com/djragsdale/express-smoke-testing#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "debug": "^4.1.1",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1"
+  }
 }
