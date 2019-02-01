@@ -1,0 +1,15 @@
+package-lock.json
+npm-shrinkwrap.json
+
+/coverage
+/docs/_build
+node_modules
+.idea
+.vscode
+.DS_Store
+cov.*
+*.log
+.env*
+
+# Regardless the rules above, never ignore following
+!.vscode/launch.json

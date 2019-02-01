@@ -1,0 +1,3 @@
+--reporter=test/reporter.js
+--timeout=120000
+--recursive
