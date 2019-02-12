@@ -2,7 +2,6 @@ dry-run: null
 hookfiles: null
 language: nodejs
 require: null
-server: npm start
 server-wait: 3
 init: false
 custom: {}

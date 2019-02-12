@@ -4,7 +4,7 @@
   "description": "Integrating smoke tests into your Express app Travis pipeline",
   "scripts": {
     "start": "node serve.js",
-    "test": "mocha && ./scripts/good-smoke.sh"
+    "test": "mocha && npm start & ./scripts/good-smoke.sh"
   },
   "repository": {
     "type": "git",
