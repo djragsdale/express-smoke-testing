@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "description": "Integrating smoke tests into your Express app Travis pipeline",
   "scripts": {
-    "start": "node app.js",
-    "test": "dredd"
+    "start": "node serve.js",
+    "test": "mocha && npm start & ./scripts/good-smoke.sh"
   },
   "repository": {
     "type": "git",
@@ -18,11 +18,14 @@
   "homepage": "https://github.com/djragsdale/express-smoke-testing#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
-    "debug": "^4.1.1",
     "express": "^4.16.4",
+    "faker": "^4.1.0",
     "morgan": "^1.9.1"
   },
   "devDependencies": {
-    "dredd": "^7.2.0"
+    "dredd": "^7.2.0",
+    "mocha": "^5.2.0",
+    "supertest": "^3.4.2",
+    "wait-on": "^3.2.0"
   }
 }

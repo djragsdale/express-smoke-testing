@@ -2,7 +2,6 @@ dry-run: null
 hookfiles: null
 language: nodejs
 require: null
-server: npm start
 server-wait: 3
 init: false
 custom: {}
@@ -29,6 +28,6 @@ hooks-worker-term-timeout: 5000
 hooks-worker-term-retry: 500
 hooks-worker-handler-host: 127.0.0.1
 hooks-worker-handler-port: 61321
-config: ./dredd.yml
+config: ./dredd-api.yml
 blueprint: api.yaml
 endpoint: 'http://127.0.0.1:3000'
