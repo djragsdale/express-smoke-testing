@@ -1,4 +1,4 @@
 #!/bin/bash
-dredd --config dredd-api.yml --level=debug
+dredd --config dredd-api.yml
 sleep 5s
-dredd --config dredd-pages.yml --level=debug
+dredd --config dredd-pages.yml
